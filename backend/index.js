@@ -5,6 +5,7 @@ require("dotenv").config();
 require("./db/conn");
 
 const app = express();
+app.disable("x-powered-by");
 const port = process.env.PORT || 4000;
 
 app.use(cors());
